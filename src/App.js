@@ -477,9 +477,7 @@ export default function App() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#624A58]/40 via-[#624A58]/20 to-transparent"></div>
 
         {/* Content overlay */}
-        <div className="absolute inset-0 flex flex-col justify-end px-4 pb-16 sm:px-6 sm:pb-20 text-[#FEEEDE]">
-
-
+       <div className="absolute bottom-0 left-0 right-0 px-4 pt-6 pb-10 sm:pt-20 sm:pb-24 sm:px-6 text-[#FEEEDE]">
 
           <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white" style={{
             textShadow: '0 0 8px rgba(254, 238, 222, 0.4), 1px 1px 4px rgba(0, 0, 0, 0.8)',
