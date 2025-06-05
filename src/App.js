@@ -284,7 +284,7 @@ export default function App() {
           </div>
           <div className="absolute inset-0 bg-[#624A58] opacity-50"></div>
         </div>
-       <div className="container mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 z-10 relative">
+        <div className="container mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 z-10 relative">
 
           <div className="max-w-3xl" style={parallaxStyle}>
             <h1 className="text-5xl md:text-7xl font-bold text-[#FEEEDE] mb-4 leading-tight drop-shadow-lg">
@@ -320,127 +320,124 @@ export default function App() {
           </a>
         </div>
       </section>
+     
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-br from-[#FEEEDE] to-[#FFF8F5] relative overflow-hidden">
+     <section id="about" className="py-16 sm:py-20 bg-gradient-to-br from-[#FEEEDE] to-[#FFF8F5] relative overflow-hidden">
 
-        {/* Background decorative elements */}
-        <div className="absolute top-10 left-10 w-32 h-32 bg-[#624A58]/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-48 h-48 bg-[#624A58]/5 rounded-full blur-3xl"></div>
+  {/* Decorative Background */}
+  <div className="absolute top-10 left-10 w-24 h-24 sm:w-32 sm:h-32 bg-[#624A58]/5 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-10 right-10 w-36 h-36 sm:w-48 sm:h-48 bg-[#624A58]/5 rounded-full blur-3xl"></div>
 
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-[#624A58] mb-4">About Me</h2>
-            <p className="text-xl text-[#624A58]/70 max-w-2xl mx-auto mb-6">
-              Passionate about transforming spaces through innovative design and artistic vision
-            </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#624A58] to-[#624A58]/50 mx-auto"></div>
+  <div className="container mx-auto px-4 sm:px-6 relative z-10">
+    <div className="text-center mb-12 sm:mb-16">
+      <h2 className="text-4xl sm:text-5xl font-bold text-[#624A58] mb-4">About Me</h2>
+      <p className="text-base sm:text-xl text-[#624A58]/70 max-w-2xl mx-auto mb-4 sm:mb-6">
+        Passionate about transforming spaces through innovative design and artistic vision
+      </p>
+      <div className="w-20 h-1 bg-gradient-to-r from-[#624A58] to-[#624A58]/50 mx-auto"></div>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 items-center max-w-6xl mx-auto">
+      
+      {/* Profile Image */}
+      <div className="relative">
+        <div className="relative max-w-xs sm:max-w-md mx-auto">
+          <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-[#624A58]/20 to-[#624A58]/10 rounded-2xl transform rotate-3"></div>
+          <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-[#624A58]/30 rounded-2xl transform -rotate-3"></div>
+
+          <img
+            loading="lazy"
+            src="images/Profile Images/profile dark lev.png"
+            alt="Faraiha Rehman"
+            className="relative z-10 rounded-2xl shadow-2xl w-full h-auto object-cover object-top border-4 border-white"
+          />
+
+          {/* Floating badges */}
+          <div className="absolute -top-4 -right-8 bg-white shadow-lg rounded-full p-3 animate-bounce">
+            <i className="fas fa-paint-brush text-[#624A58] text-xl"></i>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-            {/* Enhanced Profile Image Section */}
-            <div className="relative">
-              <div className="relative max-w-md mx-auto">
-                {/* Decorative background shapes */}
-                <div className="absolute -top-6 -left-6 w-full h-full bg-gradient-to-br from-[#624A58]/20 to-[#624A58]/10 rounded-2xl transform rotate-3"></div>
-                <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-[#624A58]/30 rounded-2xl transform -rotate-3"></div>
-
-                <img
-                  loading="lazy"
-                  src="images/Profile Images/profile dark lev.png"
-                  alt="Faraiha Rehman"
-                  className="relative z-10 rounded-2xl shadow-2xl w-full h-auto object-cover object-top border-4 border-white"
-                />
-
-                {/* Floating skill badges */}
-                <div className="absolute -top-4 -right-8 bg-white shadow-lg rounded-full p-3 animate-bounce">
-                  <i className="fas fa-paint-brush text-[#624A58] text-xl"></i>
-                </div>
-                <div className="absolute -bottom-4 -left-8 bg-white shadow-lg rounded-full p-3 animate-bounce delay-100">
-                  <i className="fas fa-cube text-[#624A58] text-xl"></i>
-                </div>
-              </div>
-            </div>
-
-            {/* Enhanced Content Section */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-4xl font-bold text-[#624A58] mb-2 flex items-center gap-3">
-                  <span className="text-5xl">👋</span>
-                  Hello, I'm Faraiha
-                </h3>
-                <p className="text-xl text-[#624A58]/80 font-medium">Interior Designer | Artist | 3D Visualizer</p>
-              </div>
-
-              <div className="space-y-6">
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-[#624A58]/10">
-                  <h4 className="text-lg font-semibold text-[#624A58] mb-3 flex items-center gap-2">
-                    <i className="fas fa-graduation-cap text-[#624A58]"></i>
-                    Education & Journey
-                  </h4>
-                  <p className="text-[#624A58]/80 leading-relaxed">
-                    Currently pursuing M.Sc. Animation from Chandigarh University. I hold a B.Sc. in Interior Design
-                    and have gained valuable experience as an Assistant Artist at Marsi Art & Culture and as a Remote Art Educator at HBM Modern Public Girl Inter College.
-                  </p>
-                </div>
-
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-[#624A58]/10">
-                  <h4 className="text-lg font-semibold text-[#624A58] mb-3 flex items-center gap-2">
-                    <i className="fas fa-lightbulb text-[#624A58]"></i>
-                    My Passion
-                  </h4>
-                  <p className="text-[#624A58]/80 leading-relaxed">
-                    I specialize in creating immersive, artistic environments that blend functionality with aesthetic beauty.
-                    My work spans from residential spaces to commercial projects, always focusing on innovative design solutions.
-                  </p>
-                </div>
-              </div>
-
-              {/* Experience Stats */}
-              <div className="grid grid-cols-3 gap-4 my-8">
-                <div className="text-center bg-white/60 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                  <div className="text-2xl font-bold text-[#624A58]">2+</div>
-                  <div className="text-sm text-[#624A58]/70">Years Experience</div>
-                </div>
-                <div className="text-center bg-white/60 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                  <div className="text-2xl font-bold text-[#624A58]">10+</div>
-                  <div className="text-sm text-[#624A58]/70">Projects Completed</div>
-                </div>
-                <div className="text-center bg-white/60 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                  <div className="text-2xl font-bold text-[#624A58]">10+</div>
-                  <div className="text-sm text-[#624A58]/70">Awards Won</div>
-                </div>
-              </div>
-
-              {/* Enhanced Skills Section without skill bars */}
-              <div>
-                <h4 className="text-lg font-semibold text-[#624A58] mb-4 flex items-center gap-2">
-                  <i className="fas fa-tools text-[#624A58]"></i>
-                  Technical Expertise
-                </h4>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {[
-                    { name: "SketchUp", icon: "fas fa-cube" },
-                    { name: "Lumion", icon: "fas fa-lightbulb" },
-                    { name: "V-ray", icon: "fas fa-sun" },
-                    { name: "Maya", icon: "fas fa-shapes" },
-                    { name: "AutoCAD", icon: "fas fa-drafting-compass" },
-                    { name: "Photoshop", icon: "fas fa-image" }
-                  ].map((skill) => (
-                    <div key={skill.name} className="group">
-                      <div className="bg-gradient-to-br from-[#624A58] to-[#4a3743] text-[#FEEEDE] px-6 py-4 rounded-xl text-base font-semibold hover:shadow-xl transition-all duration-300 cursor-pointer flex items-center gap-3 hover:scale-105">
-
-                        <i className={`${skill.icon} text-xs`}></i>
-                        {skill.name}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+          <div className="absolute -bottom-4 -left-8 bg-white shadow-lg rounded-full p-3 animate-bounce delay-100">
+            <i className="fas fa-cube text-[#624A58] text-xl"></i>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Content */}
+      <div className="space-y-8">
+        <div>
+          <h3 className="text-3xl sm:text-4xl font-bold text-[#624A58] mb-2 flex items-center gap-3">
+            <span className="text-4xl sm:text-5xl">👋</span> Hello, I'm Faraiha
+          </h3>
+          <p className="text-lg text-[#624A58]/80 font-medium">Interior Designer | Artist | 3D Visualizer</p>
+        </div>
+
+        <div className="space-y-5">
+          {[
+            {
+              icon: "fas fa-graduation-cap",
+              title: "Education & Journey",
+              text: `Currently pursuing M.Sc. Animation from Chandigarh University. I hold a B.Sc. in Interior Design and have gained valuable experience as an Assistant Artist at Marsi Art & Culture and as a Remote Art Educator at HBM Modern Public Girl Inter College.`
+            },
+            {
+              icon: "fas fa-lightbulb",
+              title: "My Passion",
+              text: `I specialize in creating immersive, artistic environments that blend functionality with aesthetic beauty. My work spans from residential spaces to commercial projects, always focusing on innovative design solutions.`
+            }
+          ].map((item, idx) => (
+            <div key={idx} className="bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-[#624A58]/10">
+              <h4 className="text-base sm:text-lg font-semibold text-[#624A58] mb-3 flex items-center gap-2">
+                <i className={`${item.icon} text-[#624A58]`}></i>
+                {item.title}
+              </h4>
+              <p className="text-[#624A58]/80 leading-relaxed text-sm sm:text-base">{item.text}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 my-6">
+          {[
+            { label: "Years Experience", value: "2+" },
+            { label: "Projects Completed", value: "10+" },
+            { label: "Awards Won", value: "10+" }
+          ].map((item, i) => (
+            <div key={i} className="text-center bg-white/60 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-lg">
+              <div className="text-xl sm:text-2xl font-bold text-[#624A58]">{item.value}</div>
+              <div className="text-xs sm:text-sm text-[#624A58]/70">{item.label}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Skills */}
+        <div>
+          <h4 className="text-base sm:text-lg font-semibold text-[#624A58] mb-4 flex items-center gap-2">
+            <i className="fas fa-tools text-[#624A58]"></i>
+            Technical Expertise
+          </h4>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {[
+              { name: "SketchUp", icon: "fas fa-cube" },
+              { name: "Lumion", icon: "fas fa-lightbulb" },
+              { name: "V-ray", icon: "fas fa-sun" },
+              { name: "Maya", icon: "fas fa-shapes" },
+              { name: "AutoCAD", icon: "fas fa-drafting-compass" },
+              { name: "Photoshop", icon: "fas fa-image" }
+            ].map((skill) => (
+              <div key={skill.name} className="group">
+                <div className="bg-gradient-to-br from-[#624A58] to-[#4a3743] text-[#FEEEDE] px-4 py-3 sm:px-6 sm:py-4 rounded-xl text-sm sm:text-base font-semibold hover:shadow-xl transition-all duration-300 cursor-pointer flex items-center gap-2 sm:gap-3 hover:scale-105">
+                  <i className={`${skill.icon} text-xs`}></i>
+                  {skill.name}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-[#FFF8F5]">
@@ -456,58 +453,58 @@ export default function App() {
           {!selectedProject ? (
             // Vertical scroll container for project cards with smooth scroll and rounded corners
             <div
-  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto px-4 overflow-y-auto scrollbar-thin scrollbar-thumb-[#624A58]/80 scrollbar-track-transparent rounded-2xl"
-  style={{
-    maxHeight: '700px',
-    scrollBehavior: 'smooth',
-  }}
->
-  {projects.map((project, index) => (
-    <div
-      key={index}
-      className="relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer group transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl hover:-translate-y-1 bg-white"
-      onClick={() => setSelectedProject(project)}
-    >
-      <div className="relative aspect-[16/10] sm:h-96 w-full">
-        <img
-          src={project.coverImage}
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#624A58]/40 via-[#624A58]/20 to-transparent"></div>
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto px-4 overflow-y-auto scrollbar-thin scrollbar-thumb-[#624A58]/80 scrollbar-track-transparent rounded-2xl"
+              style={{
+                maxHeight: '700px',
+                scrollBehavior: 'smooth',
+              }}
+            >
+              {projects.map((project, index) => (
+                <div
+                  key={index}
+                  className="relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer group transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl hover:-translate-y-1 bg-white"
+                  onClick={() => setSelectedProject(project)}
+                >
+                  <div className="relative aspect-[16/10] sm:h-96 w-full">
+                    <img
+                      src={project.coverImage}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#624A58]/40 via-[#624A58]/20 to-transparent"></div>
 
-        {/* Content overlay */}
-       <div className="absolute bottom-0 left-0 right-0 px-4 pt-6 pb-10 sm:pt-20 sm:pb-24 sm:px-6 text-[#FEEEDE]">
+                    {/* Content overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 px-4 pt-6 pb-10 sm:pt-20 sm:pb-24 sm:px-6 text-[#FEEEDE]">
 
-          <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white" style={{
-            textShadow: '0 0 8px rgba(254, 238, 222, 0.4), 1px 1px 4px rgba(0, 0, 0, 0.8)',
-            WebkitTextStroke: '0.5px rgba(254, 238, 222, 0.2)'
-          }}>
-            {project.title}
-          </h3>
-          <p className="text-md sm:text-lg mb-2 font-medium text-[#FEEEDE]" style={{
-            textShadow: '0 0 6px rgba(254, 238, 222, 0.3), 1px 1px 3px rgba(0, 0, 0, 0.7)',
-            WebkitTextStroke: '0.3px rgba(254, 238, 222, 0.15)'
-          }}>
-            {project.category}
-          </p>
-          <div className="flex items-center justify-between">
-            <p className="text-xs sm:text-sm opacity-80 flex items-center gap-2">
-              <i className="fas fa-images"></i> {project.images.length} Images
-            </p>
-            <div className="flex items-center gap-2 text-xs sm:text-sm font-medium bg-[#FEEEDE]/20 backdrop-blur-sm px-3 py-1 rounded-full border border-[#FEEEDE]/30">
-              <span>View Project</span>
-              <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                      <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white" style={{
+                        textShadow: '0 0 8px rgba(254, 238, 222, 0.4), 1px 1px 4px rgba(0, 0, 0, 0.8)',
+                        WebkitTextStroke: '0.5px rgba(254, 238, 222, 0.2)'
+                      }}>
+                        {project.title}
+                      </h3>
+                      <p className="text-md sm:text-lg mb-2 font-medium text-[#FEEEDE]" style={{
+                        textShadow: '0 0 6px rgba(254, 238, 222, 0.3), 1px 1px 3px rgba(0, 0, 0, 0.7)',
+                        WebkitTextStroke: '0.3px rgba(254, 238, 222, 0.15)'
+                      }}>
+                        {project.category}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <p className="text-xs sm:text-sm opacity-80 flex items-center gap-2">
+                          <i className="fas fa-images"></i> {project.images.length} Images
+                        </p>
+                        <div className="flex items-center gap-2 text-xs sm:text-sm font-medium bg-[#FEEEDE]/20 backdrop-blur-sm px-3 py-1 rounded-full border border-[#FEEEDE]/30">
+                          <span>View Project</span>
+                          <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Decorative corner accent */}
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#FEEEDE]/30 to-transparent rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              ))}
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Decorative corner accent */}
-      <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#FEEEDE]/30 to-transparent rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-    </div>
-  ))}
-</div>
 
           ) : (
             // Show selected project images - Enhanced layout
@@ -584,18 +581,18 @@ export default function App() {
               <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-[#624A58]/10 to-[#624A58]/5 rounded-2xl transform rotate-2"></div>
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-[#624A58]/20 rounded-2xl transform -rotate-2"></div>
 
-              <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-12 shadow-2xl border border-[#624A58]/10">
+              <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-10 md:p-12 shadow-2xl border border-[#624A58]/10">
                 {/* Resume Preview Mock */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 mb-8">
                       <div className="w-16 h-16 bg-gradient-to-br from-[#624A58] to-[#4a3743] rounded-xl flex items-center justify-center shadow-lg">
                         <i className="fas fa-file-alt text-[#FEEEDE] text-2xl"></i>
                       </div>
-           <div>
-  <h3 className="text-2xl font-bold text-[#624A58]">Career Overview</h3>
-  <p className="text-[#624A58]/70">A snapshot of my skills, experience, and milestones</p>
-</div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-[#624A58]">Career Overview</h3>
+                        <p className="text-[#624A58]/70">A snapshot of my skills, experience, and milestones</p>
+                      </div>
 
                     </div>
 
@@ -649,7 +646,7 @@ export default function App() {
                 </div>
 
                 {/* Enhanced Download Button */}
-                <div className="flex flex-col items-center mt-12 pt-8 border-t border-[#624A58]/10">
+                <div className="flex flex-col items-center mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t border-[#624A58]/10">
                   <a
                     href="FARAIHA_REHMAN_RESUME.pdf"
                     download
