@@ -202,7 +202,7 @@ export default function App() {
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrollPosition > 50 ? "bg-[#624A58] shadow-lg" : "bg-transparent"
           }`}
       >
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-28 py-4">
           <div className="flex justify-between items-center">
             <a
               href="#home"
@@ -283,7 +283,7 @@ export default function App() {
           </div>
           <div className="absolute inset-0 bg-[#624A58] opacity-50"></div>
         </div>
-        <div className="container mx-auto px-6 z-10 relative">
+        <div className="container mx-auto px-28 z-10 relative">
           <div className="max-w-3xl" style={parallaxStyle}>
             <h1 className="text-5xl md:text-7xl font-bold text-[#FEEEDE] mb-4 leading-tight drop-shadow-lg">
               Faraiha Rehman
