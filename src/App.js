@@ -846,10 +846,10 @@ export default function App() {
                       <i className="fas fa-envelope text-[#624A58] group-hover:text-[#FEEEDE] text-base transition-colors duration-300"></i>
                     </div>
                     <a
-                      href="mailto:safadesignstudio@gmail.com"
+                      href="mailto:safadzynstudio@gmail.com"
                       className="text-[#624A58]/80 hover:text-[#624A58] transition-colors text-base font-medium"
                     >
-                      safadesignstudio@gmail.com
+                      safadzynstudio@gmail.com
                     </a>
                   </div>
 
@@ -971,7 +971,7 @@ export default function App() {
                 className="flex items-center gap-3 hover:text-[#F8B195] transition-all duration-300 hover:scale-105 font-medium"
               >
                 <i className="fas fa-envelope text-base"></i>
-                safadesignstudio@gmail.com
+                safadzynstudio@gmail.com
               </a>
             </div>
 
