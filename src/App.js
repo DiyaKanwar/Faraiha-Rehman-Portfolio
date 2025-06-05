@@ -456,62 +456,58 @@ export default function App() {
           {!selectedProject ? (
             // Vertical scroll container for project cards with smooth scroll and rounded corners
             <div
-              className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto overflow-y-auto scrollbar-thin scrollbar-thumb-[#624A58]/80 scrollbar-track-transparent rounded-2xl"
-              style={{
-                maxHeight: '700px',
-                paddingRight: '1rem',
-                scrollBehavior: 'smooth',
-              }}
-            >
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className="relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer group transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl hover:-translate-y-1 bg-white"
-                  onClick={() => setSelectedProject(project)}
-                  style={{ aspectRatio: '16/10' }} // Makes it rectangular
-                >
-                  <div className="relative h-96"> {/* Fixed height for rectangular shape */}
-                    <img
-                      src={project.coverImage}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#624A58]/30 via-[#624A58]/10 to-transparent"></div>
+  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto px-4 overflow-y-auto scrollbar-thin scrollbar-thumb-[#624A58]/80 scrollbar-track-transparent rounded-2xl"
+  style={{
+    maxHeight: '700px',
+    scrollBehavior: 'smooth',
+  }}
+>
+  {projects.map((project, index) => (
+    <div
+      key={index}
+      className="relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer group transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl hover:-translate-y-1 bg-white"
+      onClick={() => setSelectedProject(project)}
+    >
+      <div className="relative aspect-[16/10] sm:h-96 w-full">
+        <img
+          src={project.coverImage}
+          alt={project.title}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#624A58]/40 via-[#624A58]/20 to-transparent"></div>
 
-                    {/* Content overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-8 pb-20 text-[#FEEEDE] transform transition-transform duration-300 group-hover:translate-y-[-4px]">
-                      <h3 className="text-3xl font-bold mb-3 text-white" style={{
-                        textShadow: '0 0 8px rgba(254, 238, 222, 0.4), 1px 1px 4px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.6)',
-                        filter: 'drop-shadow(0 2px 6px rgba(132, 101, 119, 0.5))',
-                        WebkitTextStroke: '0.5px rgba(254, 238, 222, 0.2)'
-                      }}>
-                        {project.title}</h3>
-
-                      <p className="text-lg mb-3 font-medium text-[#FEEEDE]" style={{
-                        textShadow: '0 0 6px rgba(254, 238, 222, 0.3), 1px 1px 3px rgba(0, 0, 0, 0.7)',
-                        filter: 'drop-shadow(0 1px 4px rgba(98, 74, 88, 0.4))',
-                        WebkitTextStroke: '0.3px rgba(254, 238, 222, 0.15)'
-                      }}>{project.category}</p>
-
-                      <div className="flex items-center justify-between">
-                        <p className="text-sm opacity-80 flex items-center gap-2">
-                          <i className="fas fa-images"></i>
-                          {project.images.length} Images
-                        </p>
-
-                        <div className="flex items-center gap-2 text-sm font-medium bg-[#FEEEDE]/20 backdrop-blur-sm px-3 py-1 rounded-full border border-[#FEEEDE]/30">
-                          <span>View Project</span>
-                          <i className="fas fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Decorative corner accent */}
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#FEEEDE]/30 to-transparent rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-              ))}
+        {/* Content overlay */}
+        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 pb-16 sm:pb-20 text-[#FEEEDE]">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white" style={{
+            textShadow: '0 0 8px rgba(254, 238, 222, 0.4), 1px 1px 4px rgba(0, 0, 0, 0.8)',
+            WebkitTextStroke: '0.5px rgba(254, 238, 222, 0.2)'
+          }}>
+            {project.title}
+          </h3>
+          <p className="text-md sm:text-lg mb-2 font-medium text-[#FEEEDE]" style={{
+            textShadow: '0 0 6px rgba(254, 238, 222, 0.3), 1px 1px 3px rgba(0, 0, 0, 0.7)',
+            WebkitTextStroke: '0.3px rgba(254, 238, 222, 0.15)'
+          }}>
+            {project.category}
+          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-xs sm:text-sm opacity-80 flex items-center gap-2">
+              <i className="fas fa-images"></i> {project.images.length} Images
+            </p>
+            <div className="flex items-center gap-2 text-xs sm:text-sm font-medium bg-[#FEEEDE]/20 backdrop-blur-sm px-3 py-1 rounded-full border border-[#FEEEDE]/30">
+              <span>View Project</span>
+              <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Decorative corner accent */}
+      <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#FEEEDE]/30 to-transparent rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+  ))}
+</div>
+
           ) : (
             // Show selected project images - Enhanced layout
             <div>
