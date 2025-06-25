@@ -75,7 +75,7 @@ const projects = [
   {
     title: "The Pump House Gyms",
     category: "Gym",
-    coverImage: "/images/The Pump House Gyms/PHGym14.jpg",
+    coverImage: "/images/The Pump House Gyms/PHGym1.jpg",
     images: [
       "/images/The Pump House Gyms/PHGym1.jpg",
       "/images/The Pump House Gyms/PHGym2.jpg",
@@ -91,9 +91,7 @@ const projects = [
       "/images/The Pump House Gyms/PHGym12.jpg",
       "/images/The Pump House Gyms/PHGym13.jpg",
       "/images/The Pump House Gyms/PHGym14.jpg",
-      "/images/The Pump House Gyms/PHGym15.jpg",
-      "/images/The Pump House Gyms/PHGym16.jpg",
-      "/images/The Pump House Gyms/PHGym17.jpg",
+
     ]
   },
 
